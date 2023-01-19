@@ -1,0 +1,15 @@
+<network>
+ <name>my-net</name>
+ <forward mode='nat'>
+ <nat>  
+   <port start='1024' end='63024'/> 
+ </nat>
+ </forward>
+ <bridge name='v-net0' stp='on' delay='0'/>
+ <mac address='52:54:00:cb:98:09'/>
+ <ip address='192.168.100.1' netmask='255.255.255.192'>
+ <dhcp>
+   <range start='192.168.100.1' end='192.168.100.62'/> 
+ </dhcp>
+ </ip>
+</network>
